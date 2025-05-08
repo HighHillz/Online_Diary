@@ -22,19 +22,6 @@ for (const key in settings) {
   }
 }
 
-/* let filters = { // Filters object
-  "time_range" : [],
-  "case_match" : false,
-  "text_match" : false,
-}
-
-let filters_buffer = {} //Store unsaved filters temparorily until saved
-for (const key in filters) {
-  if (filters.hasOwnProperty(key)) {
-    filters_buffer[key] = filters[key];
-  }
-} */
-
 // Utility functions
 function getDay(date) {
   return date.getDay(); // Get day number (0 = Sunday, 6 = Saturday)
@@ -266,14 +253,10 @@ function updateCalendar() {
 document.getElementById("search").onkeyup = function () {
   const query = document.getElementById("search").value.trim();
   if (query) {
-    /* $("#filters-btn-cont").show();
-    $("#settings-btn-cont").hide(); */
     document.getElementById("results-main").style.display = "block";
     document.getElementById("current").disabled = true;
     searchEntries(query);
   } else {
-    /* $("#filters-btn-cont").hide();
-    $("#settings-btn-cont").show(); */
     document.getElementById("results-main").style.display = "none";
     document.getElementById("current").disabled = month_index === time.getMonth() && year === time.getFullYear();
   }
@@ -382,11 +365,6 @@ document.getElementById("cancel-setting").onclick = function () {
   $('#settings-popup').toggle();
   $('#disable-bg').toggle();
 }
-
-/* document.getElementById("cancel-filter").onclick = function() {
-  $("#filters-popup").toggle();
-  $("#disable-bg").toggle();
-} */
 
 function clearPlaceholder() {
   let placeholderText = document.getElementById("search").placeholder;
