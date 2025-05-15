@@ -165,8 +165,8 @@ document.getElementById("content").addEventListener("input", saveContent);
 document.getElementById("title").addEventListener("input", saveContent);
 
 function saveContent() {
-  const content = document.getElementById("content").value.trim();
-  const titleContent = document.getElementById("title").value.trim();
+  const content = document.getElementById("content").value;
+  const titleContent = document.getElementById("title").value;
 
   if (content || titleContent) {
     entries[jsonid] = content;
@@ -254,18 +254,15 @@ document.getElementById("search").onkeyup = function () {
   const query = document.getElementById("search").value.trim();
   if (query) {
     document.getElementById("results-main").style.display = "block";
-    document.getElementById("current").disabled = true;
     searchEntries(query);
   } else {
     document.getElementById("results-main").style.display = "none";
-    document.getElementById("current").disabled = month_index === time.getMonth() && year === time.getFullYear();
   }
 };
 
 function searchEntries(query) {
   results.length = 0;
   document.getElementById("results").innerHTML = "";
-  document.getElementById("num").innerHTML = `<span style='color:dodgerblue;'>${results.length}</span> result(s) found for <span style='color:dodgerblue;'>${query}</span>`;
 
   for (let sy = time.getFullYear() - 100; sy <= time.getFullYear(); sy++) {
     for (let sm = 1; sm <= 12; sm++) {
@@ -283,22 +280,6 @@ function searchEntries(query) {
   }
 
   document.getElementById("num").innerHTML = `<span style='color:dodgerblue;'>${results.length}</span> result(s) found for <span style='color:dodgerblue;'>${query}</span>`;
-}
-
-// Placeholder animation
-function typePlaceholder(placeholderText) {
-  const placeholder = placeholderText.split("");
-  let placeholderIndex = 0;
-
-  // Type a charecter every 100ms
-  const interval = setInterval(() => {
-    if (placeholderIndex < placeholder.length) {
-      document.getElementById("search").placeholder += placeholder[placeholderIndex];
-      placeholderIndex++;
-    } else {
-      clearInterval(interval);
-    }
-  }, 100);
 }
 
 // Functionalities provided in settings
@@ -364,6 +345,22 @@ document.getElementById("cancel-setting").onclick = function () {
 
   $('#settings-popup').toggle();
   $('#disable-bg').toggle();
+}
+
+// Placeholder animation
+function typePlaceholder(placeholderText) {
+  const placeholder = placeholderText.split("");
+  let placeholderIndex = 0;
+
+  // Type a charecter every 100ms
+  const interval = setInterval(() => {
+    if (placeholderIndex < placeholder.length) {
+      document.getElementById("search").placeholder += placeholder[placeholderIndex];
+      placeholderIndex++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 100);
 }
 
 function clearPlaceholder() {
