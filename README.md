@@ -29,7 +29,7 @@ The project can be useful to store a lot of content and information (everything 
 - Choose your favourite colour as highlighter.
 
 ## Updates
-- Bug Patched: Space bar on content fields not working.
+- Bug patched: Space bar on content fields not working.
 - Bug patched: Today button not working when navigating through search bar.
 
 ## Version
