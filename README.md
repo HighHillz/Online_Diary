@@ -28,6 +28,10 @@ The project can be useful to store a lot of content and information (everything 
 - Choose a mood for your content.
 - Choose your favourite colour as highlighter.
 
+## Updates
+- Bug Patched: Space bar on content fields not working.
+- Bug patched: Today button not working when navigating through search bar.
+
 ## Version
-1
+1.0.1
 
