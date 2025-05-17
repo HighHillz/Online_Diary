@@ -27,11 +27,6 @@ The project can be useful to store a lot of content and information (everything 
 - Bug patched: Space bar on content fields not working.
 - Bug patched: Today button not working when navigating through search bar.
 
-## Future Enhancements
-- Add fliter options.
-- Choose a mood for your content.
-- Choose your favourite colour as highlighter.
-
 ## Version
 1.0.1
 
