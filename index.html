@@ -37,13 +37,15 @@
             <div class="popup-content">
                 <h2>Settings</h2>
                 <hr>
-                <div class="item">
+                <div class="item" style="margin-bottom: 0px;">
                     <p class="label">Time Format</p>
                     <div id="time_format" class="textSlider" >
                         <p style="font-size: small;"><span id="12h" class="">12h</span>&nbsp;
                         <span id="24h" class="">24h</span></p>
                     </div>
                 </div>
+                <p class="description">Select any day after saving to see changes.</p>
+
                 <div class="item">
                     <p class="label">Mode</p>
                     <div id="theme" class="textSlider" >
@@ -55,12 +57,29 @@
                 <p id="note"></p>
                 <div style="position:fixed; bottom:5%; width:90%; left:5%;">
                     <div class="action-buttons">
-                        <button type="button" class="save" id="save-setting" onclick="saveSettings()">Save</button>
+                        <button type="button" class="save" id="save-setting">Save</button>
                         <button type="button" class="cancel" id="cancel-setting">Cancel</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="popup" id="filters-popup">
+            <div class="popup-content">
+                <h2>Filters</h2>
+                <hr>
+                    <p class="label">Time Range</p>
+                <div style="width:100%; display: flex; justify-content: space-between;">
+                    <input type="text" placeholder="" style="width:50px" class="popup-input" autocomplete="off" id="from_date"/>
+                    <input type="text" placeholder="" style="width:50px" class="popup-input" autocomplete="off" id="to_date"/>
+                </div>
+                <div style="position:fixed; bottom:5%; width:90%; left:5%;">
+                    <div class="action-buttons">
+                        <button type="button" class="save" id="save-filiter" onclick="//saveFliters()">Save</button>
+                        <button type="button" class="cancel" id="cancel-filter">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <div id="disable-bg">
 
         </div>
