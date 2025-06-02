@@ -3,8 +3,6 @@
 This we based project focuses on implementing a real life diary which is used to write memories and important details.
 However, it stands from the original diary with the ability to store a title for your story, search content and see when it was last edited. 
 
-More updates coming soon!
-
 ## Features
 - Day and Night themes.
 - 12/24 hours time formatting.
