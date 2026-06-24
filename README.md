@@ -3,7 +3,7 @@
 Online Diary is a client-side web application designed to recreate the intimate feel and functionality of a physical, personal journal in a digital environment. Much like a traditional paper diary, it provides a versatile, private space where you can capture daily thoughts, write reflective journals, take quick notes, log schedules, and record important tasks — all seamlessly organized through an interactive, calendar-based timeline.
 
 ![Latest Version](https://img.shields.io/badge/Latest%20Version-1.0.2-blue.svg)
-![Status](https://img.shields.io/badge/Status-Inactive-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Active-green.svg)
 
 
 ## 🌟 Features
